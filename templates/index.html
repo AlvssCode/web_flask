@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <style>
+        body {
+            background-color: pink;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        form {
+            text-align: center;
+        }
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="/bem_vindo" method="post">
+        <img src="{{ url_for('static', filename='pepisgirando.gif') }}" alt="Imagem de Login">
+        <h1>Fazer login</h1>
+
+        <label for="nome">Nome</label>
+        <input type="username" name="nome" id="nome" placeholder="Digite seu nome" required>
+
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
+
+        <input type="submit" value="Continuar">
+    </form>
+
+</body>
+</html>
+
+
